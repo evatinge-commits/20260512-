@@ -1,0 +1,8 @@
+{
+  "name": "小浪花语文 - 二年级同步练",
+  "description": "适配手机端的二年级语文同步学习应用，包含探索模式、趣味闯关与听写模拟。",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": []
+}

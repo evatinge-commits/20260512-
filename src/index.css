@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-green: #B5EAD7;
+  --color-brand-yellow: #FFDAC1;
+  --color-brand-blue: #C7CEEA;
+  --color-brand-pink: #FFB7B2;
+  --color-brand-purple: #E0BBE4;
+  --color-brand-text: #5D5D5A;
+  
+  --font-sans: "Quicksand", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#FFF9F9] text-brand-text font-sans antialiased overflow-x-hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* 田字格背景 */
+.tianzige {
+  background-image: 
+    linear-gradient(to right, rgba(152, 216, 170, 0.2) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(152, 216, 170, 0.2) 1px, transparent 1px),
+    linear-gradient(to right, rgba(152, 216, 170, 0.4) 2px, transparent 2px),
+    linear-gradient(to bottom, rgba(152, 216, 170, 0.4) 2px, transparent 2px);
+  background-size: 50% 50%, 50% 50%, 100% 100%, 100% 100%;
+  border: 2px solid #98D8AA;
+}
+
+/* 隐藏滚动条但保持功能 */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* 按钮点击反馈 */
+.btn-active:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease;
+}
